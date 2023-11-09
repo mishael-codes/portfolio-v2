@@ -4,3 +4,8 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+nav a.active{
+  color: hsl(42, 100%, 71%);
+  font-weight: bolder;
+}

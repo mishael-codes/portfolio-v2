@@ -2,11 +2,13 @@ import { NavLink } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <header className="flex justify-between p-6 bg-shadowColor opacity-80">
-      <div>
-        <h1 className="text-accentColor font-bold font-mono text-lg uppercase lg:text-2xl">Mishael Enyi</h1>
+    <header className="flex justify-between p-3 md:p-6 bg-shadowColor">
+      <div className="hidden md:block">
+        <h1 className="text-accentColor font-bold font-mono text-lg uppercase lg:text-2xl">
+          Mishael Enyi
+        </h1>
       </div>
-      <nav className=" w-1/2 flex justify-evenly text-textColor lg:text-2xl">
+      <nav className=" w-full flex justify-evenly text-textColor md:w-1/2 lg:text-2xl">
         <NavLink to="/">Home</NavLink>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/skills">Skills</NavLink>

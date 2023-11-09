@@ -5,6 +5,10 @@
   scroll-behavior: smooth;
 }
 
+body{
+  background-color: black;
+}
+
 nav a.active{
   color: hsl(42, 100%, 71%);
   font-weight: bolder;

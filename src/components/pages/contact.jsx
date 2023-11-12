@@ -9,7 +9,7 @@ import {
 const Contact = () => {
   return (
     <>
-      <div className="h-screen w-screen flex flex-col items-center">
+      <div className="h-screen w-screen lg:w-3/5 lg:mx-auto flex flex-col items-center">
         <h1 className="mt-4 mb-8 text-textColor text-xl font-semibold uppercase underline underline-offset-2 decoration-accentColor">
           Want to work together?
         </h1>

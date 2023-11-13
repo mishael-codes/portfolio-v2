@@ -5,11 +5,114 @@
   scroll-behavior: smooth;
 }
 
-body{
+body {
   background-color: hsl(218, 20%, 16%);
 }
 
-nav a.active{
+nav a.active {
   color: hsl(42, 100%, 71%);
   font-weight: bolder;
+}
+
+.dark-circle {
+  animation: dar 5s linear infinite;
+}
+
+.ash-circle {
+  animation: ash 5s linear infinite;
+}
+
+.dark-circle-left {
+  animation: dar-left 5s 2.5s linear infinite;
+}
+
+.ash-circle-left {
+  animation: ash-left 5s 2.5s linear infinite;
+}
+
+@keyframes dar {
+  25% {
+    top: 50%;
+    right: -15rem;
+    rotate: 45deg;
+  }
+  50% {
+    top: 75%;
+    right: -10rem;
+    rotate: 90deg;
+  }
+  75% {
+    right: -5rem;
+    rotate: 180deg;
+  }
+  100% {
+    top: 25%;
+    right: -10rem;
+    rotate: 360deg;
+  }
+}
+
+@keyframes ash {
+  25% {
+    top: 50%;
+    right: -5rem;
+    rotate: -45deg;
+  }
+  50% {
+    top: 25%;
+    right: -10rem;
+    rotate: -90deg;
+  }
+  75% {
+    right: -15rem;
+    rotate: -180deg;
+  }
+  100% {
+    top: 75%;
+    rotate: -360deg;
+  }
+}
+
+/* left side */
+@keyframes dar-left {
+  25% {
+    top: 50%;
+    left: -15rem;
+    rotate: -45deg;
+  }
+  50% {
+    top: 75%;
+    left: -10rem;
+    rotate: -90deg;
+  }
+  75% {
+    left: -5rem;
+    rotate: -180deg;
+  }
+  100% {
+    top: 25%;
+    left: -10rem;
+    rotate: -360deg;
+  }
+}
+
+@keyframes ash-left {
+  25% {
+    top: 50%;
+    left: -5rem;
+    rotate: 45deg;
+  }
+  50% {
+    top: 25%;
+    left: -10rem;
+    rotate: 90deg;
+  }
+  75% {
+    left: -15rem;
+    rotate: 180deg;
+  }
+  100% {
+    top: 75%;
+    rotate: 360deg;
+  }
 }

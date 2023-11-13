@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <header className="flex justify-between p-3 md:p-6 bg-shadowColor relative">
+    <header className=" sticky top-0 z-40 flex justify-between p-3 md:p-6 bg-shadowColor">
       <div className="hidden md:block">
         <h1 className="text-accentColor font-bold font-mono text-lg uppercase lg:text-2xl">
           Mishael Enyi

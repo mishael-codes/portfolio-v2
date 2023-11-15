@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
 const Nav = () => {
-  const [links, setLinks] = useState([
+  const [links] = useState([
     // an array of objects with name, dest and id. where dest is the link endpoint
     { name: "Home", dest: "/", id: 1 },
     { name: "About", dest: "/about", id: 2 },

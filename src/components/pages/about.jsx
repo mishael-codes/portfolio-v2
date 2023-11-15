@@ -20,7 +20,7 @@ const About = () => {
               About
             </h1>
           </div>
-          <div className="w-full p-6 text-textColor md:text-xl md:pl-24 lg:ml-24 lg:flex lg:flex-col lg:items-start lg:justify-center lg:mt-6 xl:mt-0 lg:h-auto lg:w-3/4">
+          <div className="w-full p-6 text-textColor md:text-xl lg:ml-24 lg:flex lg:flex-col lg:items-start lg:justify-center lg:mt-6 xl:mt-0 lg:h-auto lg:w-3/4">
             <p className="first-letter:text-2xl md:first-letter:text-3xl first-letter:text-accentColor first-letter:font-semibold indent-3 mb-2">
               Hello, it's nice to see that you're here👋. Here's a little
               knowledge about me.
@@ -47,7 +47,7 @@ const About = () => {
         </div>
         <div className="hidden lg:block">
           <div
-            className="uppercase absolute top-2/4 right-[70%] opacity-30 w-[80px] h-[80px] text-center text-accentColor text-xl lg:text-[700px] transform animate- animate-pulse z-0"
+            className="uppercase absolute top-2/4 right-[70%] opacity-30 w-[80px] h-[80px] text-center text-accentColor text-xl lg:text-[700px] transform animate-pulse z-0"
           >
             {letter}
           </div>

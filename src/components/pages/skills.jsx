@@ -80,7 +80,7 @@ const Skills = () => {
         </div>
       </div>
       <div className="hidden lg:block">
-        <div className="uppercase absolute top-2/4 right-[70%] opacity-30 w-[80px] h-[80px] text-center text-accentColor text-xl lg:text-[700px] transform animate- animate-pulse z-0">
+        <div className="uppercase absolute top-2/4 right-[70%] opacity-30 w-[80px] h-[80px] text-center text-accentColor text-xl lg:text-[700px] transform animate-pulse z-0">
           {letter}
         </div>
         <div className="absolute top-1/4 -right-40 w-[75px] h-[75px] shadow-lg shadow-black bg-shadowColor rounded-full opacity-70 dark-circle"></div>

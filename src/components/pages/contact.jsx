@@ -1,3 +1,4 @@
+import useRandom from "../../hooks/useRandom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faXTwitter,
@@ -5,11 +6,13 @@ import {
   faGithub,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+import "../../App.css";
 
 const Contact = () => {
+  const letter = useRandom();
   return (
     <>
-      <div className="h-auto w-screen lg:w-3/5 lg:mx-auto flex flex-col items-center">
+      <div className="relative h-auto w-screen lg:w-3/5 lg:mx-auto flex flex-col items-center">
         <h1 className="mt-4 mb-8 text-textColor text-xl font-semibold uppercase underline underline-offset-2 decoration-accentColor">
           Want to work together?
         </h1>
@@ -74,6 +77,23 @@ const Contact = () => {
               className="text-textColor hover:text-accentColor"
             />
           </a>
+        </div>
+        <div className="hidden lg:block">
+          <div className="uppercase absolute top-2/4 right-[70%] opacity-30 w-[80px] h-[80px] text-center text-accentColor text-xl lg:text-[700px] transform animate-pulse z-0">
+            {letter}
+          </div>
+          <div className="hidden lg:block">
+            <div className="absolute top-1/4 -right-40 w-[75px] h-[75px] shadow-lg shadow-black bg-shadowColor rounded-full opacity-70 dark-circle"></div>
+            <div className="absolute top-2/4 -right-40 w-[75px] h-[75px] shadow-lg shadow-black bg-accentColor rounded-full opacity-70 yellow-circle"></div>
+            <div className="absolute top-3/4 -right-40 w-[75px] h-[75px] shadow-lg shadow-black bg-textColor rounded-full opacity-70 ash-circle"></div>
+            <div className="absolute top-1/4 -left-40 w-[75px] h-[75px] shadow-lg shadow-black bg-shadowColor rounded-full opacity-70 dark-circle-left"></div>
+            <div className="absolute top-2/4 -left-40 w-[75px] h-[75px] shadow-lg shadow-black bg-accentColor rounded-full opacity-70 yellow-circle-left"></div>
+            <div className="absolute top-3/4 -left-40 w-[75px] h-[75px] shadow-lg shadow-black bg-textColor rounded-full opacity-70 ash-circle-left"></div>
+            <div className="absolute"></div>
+            <div className="absolute"></div>
+            <div className="absolute"></div>
+            <div className="absolute"></div>
+          </div>
         </div>
       </div>
     </>

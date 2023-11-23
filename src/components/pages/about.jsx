@@ -44,8 +44,8 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="hidden lg:block">
-          <div className="uppercase absolute top-2/4 right-[70%] opacity-30 w-[80px] h-[80px] text-center text-accentColor text-xl lg:text-[700px] transform animate-pulse z-0">
+        <div>
+          <div className="uppercase absolute top-2/4 lg:right-[70%] right-[30%] opacity-30 text-[300px] text-center text-accentColor text-xl lg:text-[700px] transform animate-pulse z-0">
             {letter}
           </div>
           <div className="hidden lg:block">

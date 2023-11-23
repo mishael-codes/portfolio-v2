@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <>
       <div className="flex flex-col items-center justify-center p-10">
-        <div className="project-container p-10 text-center">
+        <div className="project-container my-9 lg:p-10 text-center">
           <img
             className="rounded-xl mb-7"
             src={gameHub}
@@ -31,7 +31,7 @@ const Projects = () => {
             GitHub Link
           </a>
         </div>
-        <div className="project-container p-10 text-center">
+        <div className="project-container my-9 lg:p-10 text-center">
           <img
             className="rounded-xl mb-7"
             src={sunnySide}
@@ -54,7 +54,7 @@ const Projects = () => {
             GitHub Link
           </a>
         </div>
-        <div className="project-container p-10 text-center">
+        <div className="project-container my-9 lg:p-10 text-center">
           <img
             className="rounded-xl mb-7"
             src={socialDasboard}
@@ -77,7 +77,7 @@ const Projects = () => {
             GitHub Link
           </a>
         </div>
-        <div className="project-container p-10 text-center">
+        <div className="project-container my-9 lg:p-10 text-center">
           <img
             className="rounded-xl mb-7"
             src={Huddle}
@@ -100,7 +100,7 @@ const Projects = () => {
             GitHub Link
           </a>
         </div>
-        <div className="project-container p-10 text-center">
+        <div className="project-container my-9 lg:p-10 text-center">
           <img
             className="rounded-xl mb-7"
             src={bodyMass}

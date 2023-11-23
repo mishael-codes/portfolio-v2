@@ -14,7 +14,7 @@ const Home = () => {
           <img
             src={heroImageMobile}
             alt="pic of me in a traditional attire"
-            className=" w-1/2 scale-[.70] rounded-full opacity-90"
+            className=" md:w-1/2 scale-[.70] rounded-full opacity-90"
           />
           <div className="absolute z-10 left-0 top-[60%] md:top-[30%] w-full md:w-1/2 text-center mt-4 md:text-3xl">
             <h2 className="text-textColor opacity-100">

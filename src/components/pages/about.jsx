@@ -45,7 +45,7 @@ const About = () => {
           </div>
         </div>
         <div className="hidden lg:block">
-          <div className="uppercase absolute top-2/4 right-[30%] lg:right-[70%] opacity-30 text-[300px] text-center text-accentColor text-xl lg:text-[700px] transform animate-pulse z-0">
+          <div className="uppercase absolute top-2/4 right-[30%] opacity-30 text-center text-accentColor text-xl lg:text-[700px] transform animate-pulse z-0">
             {letter}
           </div>
           <div className="hidden lg:block">

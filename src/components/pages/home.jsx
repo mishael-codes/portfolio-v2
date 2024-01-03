@@ -8,7 +8,7 @@ const Home = () => {
         <img
           src={backgroundImg}
           alt="background.jpg"
-          className="absolute opacity-80 w-full h-screen"
+          className="absolute opacity-20 w-full h-screen"
         />
         <div className="w-full flex items-center justify-center flex-col pb-28 px-5 h-screen md:flex-row-reverse md:justify-between">
           <img

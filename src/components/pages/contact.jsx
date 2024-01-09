@@ -1,4 +1,3 @@
-import useRandom from "../../hooks/useRandom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faXTwitter,
@@ -9,7 +8,6 @@ import {
 import "../../App.css";
 
 const Contact = () => {
-  const letter = useRandom();
   return (
     <>
       <div className="relative h-auto w-screen lg:w-3/5 lg:mx-auto flex flex-col items-center">
@@ -26,19 +24,19 @@ const Contact = () => {
             type="text"
             name="Full Name"
             placeholder="John Doe"
-            className="w-full mb-6 bg-shadowColor p-2 rounded-lg"
+            className="w-full mb-6 bg-shadowColor p-2 rounded-lg opacity-70"
           />
           <input
             type="email"
             name="email"
             placeholder="johndoe@gmail.com"
-            className="w-full mb-6 bg-shadowColor p-2 rounded-lg"
+            className="w-full mb-6 bg-shadowColor p-2 rounded-lg opacity-70"
           />
           <textarea
             name="message"
             rows="7"
             placeholder="Type your message"
-            className="w-full mb-6 bg-shadowColor p-2 rounded-lg"
+            className="w-full mb-6 bg-shadowColor p-2 rounded-lg opacity-70"
             required
           ></textarea>
           <button
@@ -78,11 +76,8 @@ const Contact = () => {
             />
           </a>
         </div>
-        <div className="hidden lg:block">
-          <div className="uppercase absolute top-2/4 right-[30%] opacity-30 text-center text-accentColor text-xl lg:text-[700px] transform animate-pulse z-0">
-            {letter}
-          </div>
-          <div className="hidden lg:block">
+        <div className="hidden lg:block overflow-x-hidden">
+          <div>
             <div className="absolute top-1/4 -right-40 w-[75px] h-[75px] shadow-lg shadow-black bg-shadowColor rounded-full opacity-70 dark-circle"></div>
             <div className="absolute top-2/4 -right-40 w-[75px] h-[75px] shadow-lg shadow-black bg-accentColor rounded-full opacity-70 yellow-circle"></div>
             <div className="absolute top-3/4 -right-40 w-[75px] h-[75px] shadow-lg shadow-black bg-textColor rounded-full opacity-70 ash-circle"></div>

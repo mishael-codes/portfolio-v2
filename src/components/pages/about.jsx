@@ -1,18 +1,7 @@
-// import { useState, useEffect } from "react";
-import useRandom from "../../hooks/useRandom" 
 const About = () => {
-
-  const letter = useRandom()
-
   return (
     <>
       <div className="relative px-3 h-auto w-screen lg:w-3/5 lg:mx-auto flex flex-col items-center text-textColor">
-        {/* <img
-          src={backgroundImg}
-          alt=""
-          className="absolute z-0 h-screen w-screen opacity-50"
-        /> */}
-
         <div className="h-auto">
           <div className="w-full text-center">
             <h1 className=" left-2/4 z-10 text-textColor text-xl font-semibold uppercase underline underline-offset-2 decoration-accentColor mt-3 md:text-3xl">
@@ -44,11 +33,8 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="hidden lg:block">
-          <div className="uppercase absolute top-2/4 right-[30%] opacity-30 text-center text-accentColor text-xl lg:text-[700px] transform animate-pulse z-0">
-            {letter}
-          </div>
-          <div className="hidden lg:block">
+        <div className="hidden lg:block overflow-x-hidden">
+          <div>
             <div className="absolute top-1/4 -right-40 w-[75px] h-[75px] shadow-lg shadow-black bg-shadowColor rounded-full opacity-70 dark-circle"></div>
             <div className="absolute top-2/4 -right-40 w-[75px] h-[75px] shadow-lg shadow-black bg-accentColor rounded-full opacity-70 yellow-circle"></div>
             <div className="absolute top-3/4 -right-40 w-[75px] h-[75px] shadow-lg shadow-black bg-textColor rounded-full opacity-70 ash-circle"></div>

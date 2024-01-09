@@ -48,35 +48,35 @@ const Contact = () => {
           </button>
         </form>
         <div className="w-full flex items-center justify-evenly mt-8">
-          <a target="" href="https://github.com/mishael-codes">
+          <a target="_blank" rel="noreferrer" href="https://github.com/mishael-codes">
             <FontAwesomeIcon
               icon={faGithub}
               size="2xl"
               className="text-textColor hover:text-accentColor"
             />
           </a>
-          <a target="" href="https://www.linkedin.com/in/mishael-enyi/">
+          <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/mishael-enyi/">
             <FontAwesomeIcon
               icon={faLinkedin}
               size="2xl"
               className="text-textColor hover:text-accentColor"
             />
           </a>
-          <a target="" href="https://hashnode.com/@mishaelcodes">
+          <a target="_blank" rel="noreferrer" href="https://hashnode.com/@mishaelcodes">
             <FontAwesomeIcon
               icon={faHashnode}
               size="2xl"
               className="text-textColor hover:text-accentColor"
             />
           </a>
-          <a target="" href="https://twitter.com/mishael_codes">
+          <a target="_blank" rel="noreferrer" href="https://twitter.com/mishael_codes">
             <FontAwesomeIcon
               icon={faXTwitter}
               size="2xl"
               className="text-textColor hover:text-accentColor"
             />
           </a>
-          <a target="" href="https://www.instagram.com/mishael_codes/">
+          <a target="_blank" rel="noreferrer" href="https://www.instagram.com/mishael_codes/">
             <FontAwesomeIcon
               icon={faInstagram}
               size="2xl"

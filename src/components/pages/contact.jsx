@@ -4,6 +4,7 @@ import {
   faLinkedin,
   faGithub,
   faInstagram,
+  faHashnode
 } from "@fortawesome/free-brands-svg-icons";
 import "../../App.css";
 
@@ -57,6 +58,13 @@ const Contact = () => {
           <a target="" href="https://www.linkedin.com/in/mishael-enyi/">
             <FontAwesomeIcon
               icon={faLinkedin}
+              size="2xl"
+              className="text-textColor hover:text-accentColor"
+            />
+          </a>
+          <a target="" href="https://hashnode.com/@mishaelcodes">
+            <FontAwesomeIcon
+              icon={faHashnode}
               size="2xl"
               className="text-textColor hover:text-accentColor"
             />

@@ -41,10 +41,6 @@ const About = () => {
             <div className="absolute top-1/4 -left-40 w-[75px] h-[75px] shadow-lg shadow-black bg-shadowColor rounded-full opacity-70 dark-circle-left"></div>
             <div className="absolute top-2/4 -left-40 w-[75px] h-[75px] shadow-lg shadow-black bg-accentColor rounded-full opacity-70 yellow-circle-left"></div>
             <div className="absolute top-3/4 -left-40 w-[75px] h-[75px] shadow-lg shadow-black bg-textColor rounded-full opacity-70 ash-circle-left"></div>
-            <div className="absolute"></div>
-            <div className="absolute"></div>
-            <div className="absolute"></div>
-            <div className="absolute"></div>
           </div>
         </div>
       </div>

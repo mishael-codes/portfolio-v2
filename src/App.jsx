@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Nav from "./components/nav.jsx";
 import About from "./components/pages/about";
-import Contact from "./components/pages/contact";
+import Social from "./components/pages/social";
 import Home from "./components/pages/home";
 import NotFound from "./components/pages/notFound"
 import Projects from "./components/pages/projects";
@@ -18,7 +18,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact/>}/>
+          <Route path="/social" element={<Social/>}/>
           <Route path="*" element={<NotFound/>}/>
         </Routes>
       </Router>

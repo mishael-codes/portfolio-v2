@@ -8,7 +8,7 @@ const Nav = () => {
     { name: "About", dest: "/about", id: 2 },
     { name: "Skills", dest: "/skills", id: 3 },
     { name: "Projects", dest: "/projects", id: 4 },
-    { name: "Contact", dest: "/contact", id: 5 },
+    { name: "Social", dest: "/social", id: 5 },
   ]);
 
   return (

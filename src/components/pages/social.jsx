@@ -16,7 +16,7 @@ const Social = () => {
           Socials
         </h1>
 
-        <div className="w-full flex items-center justify-evenly mt-8 h-[50vh]">
+        <div className="w-full flex items-center justify-evenly flex-col md:flex-row mt-8 h-[50vh] gap-12 md:gap-0">
           <a
             target="_blank"
             rel="noreferrer"

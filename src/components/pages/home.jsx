@@ -53,9 +53,9 @@ const Home = () => {
                   Send a mail <FontAwesomeIcon icon={faEnvelope} size="lg" />
                 </a>
               </button>
-              <button className="hover:border border-l-accentColor border-t-accentColor border-r-textColor border-b-textColor hover:text-accentColor hover:-translate-y-1 active:translate-y-1 transition-all p-2 rounded">
+              {/* <button className="hover:border border-l-accentColor border-t-accentColor border-r-textColor border-b-textColor hover:text-accentColor hover:-translate-y-1 active:translate-y-1 transition-all p-2 rounded">
                 Download CV{" "}
-              </button>
+              </button> */}
             </div>
           </div>
           {/* introduction ends */}

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faXTwitter,
@@ -10,6 +11,13 @@ import heroImg2 from "../../assets/images/hero-img-2.webp";
 import "../../App.css";
 
 const Contact = () => {
+  const [userEmail, setUserEmail] = useState("");
+  const submit = () => {
+    let email = document.getElementsByName("email")[0].value;
+    setUserEmail(email);
+  };
+
+  let reply = `Hey there ${userEmail}, thank you for contacting me. Please wait patiently as I get back to you`;
   return (
     <>
       <div className="relative h-auto w-screen lg:w-3/5 lg:mx-auto flex flex-col items-center">
@@ -24,7 +32,7 @@ const Contact = () => {
             className="scale-75 -mt-20 md:scale-[0.7] md:w-1/2"
           />
           <form
-            action="https://formsubmit.co/enyimishael22@gmail.com"
+            action="https://formsubmit.co/b9f4abecb9eb8534b77c5be72594bf95"
             method="POST"
             className="flex flex-col items-center justify-start w-3/4"
           >
@@ -47,7 +55,20 @@ const Contact = () => {
               className="text-textColor w-full mb-6 bg-shadowColor p-2 rounded-lg opacity-70 caret-accentColor focus:outline-none focus:outline-accentColor"
               required
             ></textarea>
+            <input
+              type="hidden"
+              name="_subject"
+              value="Hey Mishael, New Mail"
+            ></input>
+            <input type="hidden" name="_autoresponse" value={reply}></input>
+            <input type="hidden" name="_template" value="table"></input>
+            <input
+              type="hidden"
+              name="_next"
+              value="https://mishaelenyi.netlify.app"
+            ></input>
             <button
+              onClick={submit}
               type="submit"
               className="w-full bg-accentColor text-background font-semibold p-2 rounded-lg hover:bg-transparent hover:text-accentColor border-accentColor border-2 transition-all"
             >

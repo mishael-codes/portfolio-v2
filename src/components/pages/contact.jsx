@@ -25,7 +25,7 @@ const Contact = () => {
           />
           <form
             name="contact"
-            action="./home.jsx"
+            action="./"
             method="POST"
             className="flex flex-col items-center justify-start w-3/4"
             data-netlify="true"

@@ -17,12 +17,13 @@ const Skills = () => {
       <h1 className="mt-4 mb-8 text-textColor text-xl font-semibold uppercase underline underline-offset-2 decoration-accentColor md:text-3xl">
         Skills
       </h1>
-      <div className="lg:flex justify-between items-center">
-        <p className="first-letter:text-2xl md:first-letter:text-3xl first-letter:text-accentColor first-letter:font-semibold indent-3 lg:text-xl lg:pr-9 lg:w-1/2 ">
-          To bring you a beautiful, well-structured, interactive and efficient
-          webpage or website, I make use of the beautiful tools below.
+      <div className="w-full">
+        <p className="first-letter:text-2xl md:first-letter:text-3xl first-letter:text-accentColor first-letter:font-semibold indent-3 lg:text-xl lg:pr-9 w-3/4">
+          To bring your pixel-perfect designs to life on the web, making it
+          responsive, interctive, functional and efficient, I utilise the
+          following skills...
         </p>
-        <div className="lg:w-1/2">
+        <div className="w-full">
           <h3 className="px-2 text-xl font-medium mt-4 shadow-md shadow-shadowColor wood w-fit lg:text-xl">
             Core Technologies<span className="text-accentColor">:</span>
           </h3>
@@ -78,15 +79,15 @@ const Skills = () => {
         </div>
       </div>
       <div className="hidden lg:block overflow-x-hidden">
-          <div>
-            <div className="absolute top-1/4 -right-40 w-[75px] h-[75px] shadow-lg shadow-black bg-shadowColor rounded-full opacity-70 dark-circle"></div>
-            <div className="absolute top-2/4 -right-40 w-[75px] h-[75px] shadow-lg shadow-black bg-accentColor rounded-full opacity-70 yellow-circle"></div>
-            <div className="absolute top-3/4 -right-40 w-[75px] h-[75px] shadow-lg shadow-black bg-textColor rounded-full opacity-70 ash-circle"></div>
-            <div className="absolute top-1/4 -left-40 w-[75px] h-[75px] shadow-lg shadow-black bg-shadowColor rounded-full opacity-70 dark-circle-left"></div>
-            <div className="absolute top-2/4 -left-40 w-[75px] h-[75px] shadow-lg shadow-black bg-accentColor rounded-full opacity-70 yellow-circle-left"></div>
-            <div className="absolute top-3/4 -left-40 w-[75px] h-[75px] shadow-lg shadow-black bg-textColor rounded-full opacity-70 ash-circle-left"></div>
-          </div>
+        <div>
+          <div className="absolute top-1/4 -right-40 w-[75px] h-[75px] shadow-lg shadow-black bg-shadowColor rounded-full opacity-70 dark-circle"></div>
+          <div className="absolute top-2/4 -right-40 w-[75px] h-[75px] shadow-lg shadow-black bg-accentColor rounded-full opacity-70 yellow-circle"></div>
+          <div className="absolute top-3/4 -right-40 w-[75px] h-[75px] shadow-lg shadow-black bg-textColor rounded-full opacity-70 ash-circle"></div>
+          <div className="absolute top-1/4 -left-40 w-[75px] h-[75px] shadow-lg shadow-black bg-shadowColor rounded-full opacity-70 dark-circle-left"></div>
+          <div className="absolute top-2/4 -left-40 w-[75px] h-[75px] shadow-lg shadow-black bg-accentColor rounded-full opacity-70 yellow-circle-left"></div>
+          <div className="absolute top-3/4 -left-40 w-[75px] h-[75px] shadow-lg shadow-black bg-textColor rounded-full opacity-70 ash-circle-left"></div>
         </div>
+      </div>
     </div>
   );
 };

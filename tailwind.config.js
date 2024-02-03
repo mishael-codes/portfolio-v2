@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "hsl(218, 20%, 16%)",
+        background: "hsl(0, 0%, 5%)",
         textColor: "hsl(0, 0%, 93%)",
-        accentColor: "hsl(42, 100%, 71%)",
+        accentColor: "hsl(94, 91%, 57%)",
         shadowColor: "hsl(217, 10%, 25%)",
       },
     },

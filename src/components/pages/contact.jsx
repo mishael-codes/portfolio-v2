@@ -6,17 +6,56 @@ import {
   faInstagram,
   faHashnode,
 } from "@fortawesome/free-brands-svg-icons";
+import heroImg2 from "../../assets/images/hero-img-2.webp";
 import "../../App.css";
 
-const Social = () => {
+const Contact = () => {
   return (
     <>
       <div className="relative h-auto w-screen lg:w-3/5 lg:mx-auto flex flex-col items-center">
-        <h1 className="mt-4 mb-8 text-textColor text-xl font-semibold uppercase underline underline-offset-2 decoration-accentColor">
-          Socials
+        <h1 className="mt-4 text-textColor text-xl font-semibold uppercase underline underline-offset-2 decoration-accentColor md:mb-8">
+          Contact
         </h1>
-
-        <div className="w-full flex items-center justify-evenly flex-col md:flex-row mt-8 h-[50vh] gap-12 md:gap-0">
+        {/* contact form */}
+        <div className="flex items-center justify-center flex-col md:flex-row">
+          <img
+            src={heroImg2}
+            alt="mishael's bitmoji winking at you"
+            className="scale-75 -mt-20 md:scale-[0.7] md:w-1/2"
+          />
+          <form
+            action="../../formSubmit.php"
+            method="post"
+            className="flex flex-col items-center justify-start w-3/4"
+          >
+            <input
+              type="text"
+              name="Full Name"
+              placeholder="John Doe"
+              className="w-full mb-6 bg-shadowColor p-2 rounded-lg opacity-70 caret-accentColor focus:outline-none focus:outline-accentColor"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="johndoe@gmail.com"
+              className="w-full mb-6 bg-shadowColor p-2 rounded-lg opacity-70 caret-accentColor focus:outline-none focus:outline-accentColor"
+            />
+            <textarea
+              name="message"
+              rows="7"
+              placeholder="Type your message"
+              className="w-full mb-6 bg-shadowColor p-2 rounded-lg opacity-70 caret-accentColor focus:outline-none focus:outline-accentColor"
+              required
+            ></textarea>
+            <button
+              type="submit"
+              className="w-full bg-accentColor text-background font-semibold p-2 rounded-lg hover:bg-transparent hover:text-accentColor border-accentColor border-2 transition-all"
+            >
+              SUBMIT
+            </button>
+          </form>
+        </div>
+        <div className="w-full flex items-center justify-evenly mt-14">
           <a
             target="_blank"
             rel="noreferrer"
@@ -88,4 +127,4 @@ const Social = () => {
   );
 };
 
-export default Social;
+export default Contact;

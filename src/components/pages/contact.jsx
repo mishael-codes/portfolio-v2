@@ -24,11 +24,9 @@ const Contact = () => {
             className="scale-75 -mt-20 md:scale-[0.7] md:w-1/2"
           />
           <form
-            name="contact"
-            action="./"
+            action="https://formsubmit.co/enyimishael22@gmail.com"
             method="POST"
             className="flex flex-col items-center justify-start w-3/4"
-            data-netlify="true"
           >
             <input
               type="text"

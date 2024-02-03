@@ -24,27 +24,29 @@ const Contact = () => {
             className="scale-75 -mt-20 md:scale-[0.7] md:w-1/2"
           />
           <form
-            action="../../formSubmit.php"
-            method="post"
+            name="contact"
+            action="./home.jsx"
+            method="POST"
             className="flex flex-col items-center justify-start w-3/4"
+            data-netlify="true"
           >
             <input
               type="text"
               name="Full Name"
               placeholder="John Doe"
-              className="w-full mb-6 bg-shadowColor p-2 rounded-lg opacity-70 caret-accentColor focus:outline-none focus:outline-accentColor"
+              className="text-textColor w-full mb-6 bg-shadowColor p-2 rounded-lg opacity-70 caret-accentColor focus:outline-none focus:outline-accentColor"
             />
             <input
               type="email"
               name="email"
               placeholder="johndoe@gmail.com"
-              className="w-full mb-6 bg-shadowColor p-2 rounded-lg opacity-70 caret-accentColor focus:outline-none focus:outline-accentColor"
+              className="text-textColor w-full mb-6 bg-shadowColor p-2 rounded-lg opacity-70 caret-accentColor focus:outline-none focus:outline-accentColor"
             />
             <textarea
               name="message"
               rows="7"
               placeholder="Type your message"
-              className="w-full mb-6 bg-shadowColor p-2 rounded-lg opacity-70 caret-accentColor focus:outline-none focus:outline-accentColor"
+              className="text-textColor w-full mb-6 bg-shadowColor p-2 rounded-lg opacity-70 caret-accentColor focus:outline-none focus:outline-accentColor"
               required
             ></textarea>
             <button
@@ -55,7 +57,7 @@ const Contact = () => {
             </button>
           </form>
         </div>
-        <div className="w-full flex items-center justify-evenly mt-14">
+        <div className="w-full flex items-center justify-evenly mt-14 mb-8 md:mb-0">
           <a
             target="_blank"
             rel="noreferrer"

@@ -5,7 +5,7 @@ import {
   faLinkedin,
   faGithub,
   faInstagram,
-  faHashnode,
+  faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import heroImg2 from "../../assets/images/hero-img-2.webp";
 import "../../App.css";
@@ -102,10 +102,10 @@ const Contact = () => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://hashnode.com/@mishaelcodes"
+            href="https://cuttr.vercel.app/whatsapp"
           >
             <FontAwesomeIcon
-              icon={faHashnode}
+              icon={faWhatsapp}
               size="2xl"
               className="text-textColor hover:text-accentColor hover:scale-150 transition-all"
             />

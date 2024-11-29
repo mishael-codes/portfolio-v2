@@ -21,7 +21,11 @@ const Nav = () => {
       <nav className=" w-full flex justify-evenly text-textColor md:w-1/2 lg:text-xl">
         {/* loop through my array of object with links and assigned each their respctive values using the map method*/}
         {links.map((link) => (
-          <NavLink key={link.id} to={link.dest} className="hover:underline underline-offset-2 hover:decoration-accentColor hover:scale-110 transition-all">
+          <NavLink
+            key={link.id}
+            to={link.dest}
+            className="hover:underline underline-offset-2 hover:decoration-accentColor hover:scale-110 transition-all"
+          >
             {link.name}
           </NavLink>
         ))}

@@ -10,8 +10,8 @@ const About = () => {
           </div>
           <div className="w-full p-6 text-textColor md:text-xl lg:ml-24 lg:flex lg:flex-col lg:items-start lg:justify-center lg:mt-6 xl:mt-0 lg:h-auto lg:w-3/4">
             <p className="first-letter:text-2xl md:first-letter:text-3xl first-letter:text-accentColor first-letter:font-semibold indent-3 mb-2">
-              Hello, it&apos;s nice to see that you&apos;re here👋. Here&apos;s a little
-              knowledge about me.
+              Hello, it&apos;s nice to see that you&apos;re here👋. Here&apos;s
+              a little knowledge about me.
             </p>
             <p className="first-letter:text-2xl md:first-letter:text-3xl first-letter:text-accentColor first-letter:font-semibold indent-3 mb-2">
               I wrote my first line of code in 2021, It was in HTML and ever

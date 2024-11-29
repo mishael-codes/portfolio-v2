@@ -1,14 +1,23 @@
-import gamehub from "../../assets/images/projects/The Min Game Hub.webp"
-import sunnyside from "../../assets/images/projects/Sunnyside agency landing page.webp"
-import socialDashboard from "../../assets/images/projects/Social Media Dashboard.webp"
-import huddle from "../../assets/images/projects/Huddle landing page.webp"
-import bmi from "../../assets/images/projects/Body Mass Index.webp"
+import cuttr from "../../assets/images/projects/Cuttr.webp";
+import gamehub from "../../assets/images/projects/The Min Game Hub.webp";
+import sunnyside from "../../assets/images/projects/Sunnyside agency landing page.webp";
+import socialDashboard from "../../assets/images/projects/Social Media Dashboard.webp";
+import huddle from "../../assets/images/projects/Huddle landing page.webp";
+import bmi from "../../assets/images/projects/Body Mass Index.webp";
 const Projects = () => {
   // list of some projects
   const someProjects = [
     {
+      name: "Cuttr",
+      gitUrl: "https://github.com/mishaelcodes/cuttr",
+      liveUrl: "https://cuttr.vercel.app",
+      img: cuttr,
+      description:
+        "Tame the link chaos! Cuttr lets you shorten, track, and manage all your links in one place. Gain valuable insights and simplify sharing. Free to use, sign up now!",
+    },
+    {
       name: "The Min Game Hub",
-      gitUrl: "https://github.com/mishael-codes/The-Min-Game-Hub",
+      gitUrl: "https://github.com/mishael-codes/the-min-game-hub",
       liveUrl: "https://themingamehub.netlify.app",
       img: gamehub,
       description:
@@ -16,38 +25,32 @@ const Projects = () => {
     },
     {
       name: "SunnySide",
-      gitUrl:
-        "https://github.com/mishael-codes/sunnyside-agency-landing-page-main",
-      liveUrl:
-        "https://mishael-codes.github.io/sunnyside-agency-landing-page-main/",
+      gitUrl: "https://github.com/mishael-codes/sunnyside-agency",
+      liveUrl: "https://mishael-codes.github.io/sunnyside-agency/",
       img: sunnyside,
       description:
         "A landing page for a fictional branding agency. This project was built with HTML, CSS and JavaScript. It is fully responsive and has a mobile first design.",
     },
     {
       name: "Social Media Dashboard",
-      gitUrl:
-        "https://github.com/mishael-codes/social-media-dashboard-with-theme-switcher-master",
-      liveUrl:
-        "https://mishael-codes.github.io/social-media-dashboard-with-theme-switcher-master",
+      gitUrl: "https://github.com/mishael-codes/social-media-dashboard",
+      liveUrl: "https://mishael-codes.github.io/social-media-dashboard/",
       img: socialDashboard,
       description:
         "A fully responsive social media tracking dashboard with light and dark themes. This was built with HTML, CSS and JavaScript.",
     },
     {
       name: "Huddle Landing Page",
-      gitUrl:
-        "https://github.com/mishael-codes/huddle-landing-page-with-alternating-feature-blocks-master",
-      liveUrl:
-        "https://mishael-codes.github.io/huddle-landing-page-with-alternating-feature-blocks-master",
+      gitUrl: "https://github.com/mishael-codes/huddle-landing-page",
+      liveUrl: "https://mishael-codes.github.io/huddle-landing-page/",
       img: huddle,
       description:
         "Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.",
     },
     {
       name: "BMI Calculator",
-      gitUrl: "https://github.com/mishael-codes/BMI-Calc",
-      liveUrl: "https://mishael-codes.github.io/BMI-Calc/",
+      gitUrl: "https://github.com/mishaelcodes/bmi-calc-v2",
+      liveUrl: "https://mishaelcodes.github.io/bmi-calc-v2/",
       img: bmi,
       description:
         "With a cause to advocate for healthy living, I built a body mass index calculator which helps to give the user a clear feedback on whether they need to put on weight, pull off weight, or maintain their weight.",
@@ -93,7 +96,7 @@ const Projects = () => {
           ))}
         </div>
         <a
-          href="https://bit.ly/3UuhZl1"
+          href="https://github.com/mishael-codes"
           rel="noreferrer"
           target="_blank"
           className="relative z-10 bg-background text-accentColor border-b-2 border-accentColor mb-10 see-more transition-all overflow-hidden py-2"

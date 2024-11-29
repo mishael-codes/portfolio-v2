@@ -35,17 +35,17 @@ const Home = () => {
                 cursor={true}
                 className="text-accentColor"
               />
-              <br/>
-              <br/>
+              <br />
+              <br />
               <span className="text-gray-400">
-              I speak to computers through code to bring you a pixel-perfect
-              replica of your designs, making them functional, responsive and
-              immersive.
+                I speak to computers through code to bring you a pixel-perfect
+                replica of your designs, making them functional, responsive and
+                immersive.
               </span>
             </p>
             {/* cta */}
-            <div className="md:text-xl text-textColor mt-5 md:mt-8 gap-2 w-fit flex items-center justify-between">
-              <button className="mt-5 md:mt-0 animate-bounce hover:animate-none hover:border border-l-accentColor border-t-accentColor border-r-textColor border-b-textColor hover:text-accentColor hover:-translate-y-1 active:translate-y-1 transition-all p-2 rounded">
+            <div className="md:text-xl text-textColor mt-5 md:mt-8 gap-2 w-fit flex flex-col md:flex-row items-center justify-between">
+              <button className="mt-5 md:mt-0 hover:border border-l-accentColor border-t-accentColor border-r-textColor border-b-textColor hover:text-accentColor hover:-translate-y-1 active:translate-y-1 transition-all p-2 rounded">
                 <a
                   href="mailto:enyimishael22@gmail.com"
                   className="w-full h-full"
@@ -54,9 +54,9 @@ const Home = () => {
                   <FontAwesomeIcon icon={faEnvelope} size="lg" />
                 </a>
               </button>
-              {/* <button className="hover:border border-l-accentColor border-t-accentColor border-r-textColor border-b-textColor hover:text-accentColor hover:-translate-y-1 active:translate-y-1 transition-all p-2 rounded">
-                Download CV{" "}
-              </button> */}
+              <button className="hover:border border-l-accentColor border-t-accentColor border-r-textColor border-b-textColor hover:text-accentColor hover:-translate-y-1 active:translate-y-1 transition-all p-2 rounded">
+                <a href="https://cuttr.vercel.app/me-cv">My Resumé</a>
+              </button>
             </div>
           </div>
           {/* introduction ends */}

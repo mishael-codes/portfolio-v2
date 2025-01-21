@@ -25,24 +25,30 @@ const Projects = () => {
     },
     {
       name: "SunnySide",
-      gitUrl: "https://github.com/mishael-codes/sunnyside-agency",
-      liveUrl: "https://mishael-codes.github.io/sunnyside-agency/",
+      gitUrl:
+        "https://github.com/mishael-codes/sunnyside-agency-landing-page-main",
+      liveUrl:
+        "https://mishael-codes.github.io/sunnyside-agency-landing-page-main/",
       img: sunnyside,
       description:
         "A landing page for a fictional branding agency. This project was built with HTML, CSS and JavaScript. It is fully responsive and has a mobile first design.",
     },
     {
       name: "Social Media Dashboard",
-      gitUrl: "https://github.com/mishael-codes/social-media-dashboard",
-      liveUrl: "https://mishael-codes.github.io/social-media-dashboard/",
+      gitUrl:
+        "https://github.com/mishael-codes/social-media-dashboard-with-theme-switcher-master",
+      liveUrl:
+        "https://mishael-codes.github.io/social-media-dashboard-with-theme-switcher-master/",
       img: socialDashboard,
       description:
         "A fully responsive social media tracking dashboard with light and dark themes. This was built with HTML, CSS and JavaScript.",
     },
     {
       name: "Huddle Landing Page",
-      gitUrl: "https://github.com/mishael-codes/huddle-landing-page",
-      liveUrl: "https://mishael-codes.github.io/huddle-landing-page/",
+      gitUrl:
+        "https://github.com/mishael-codes/huddle-landing-page-with-alternating-feature-blocks-master",
+      liveUrl:
+        "https://mishael-codes.github.io/huddle-landing-page-with-alternating-feature-blocks-master/",
       img: huddle,
       description:
         "Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.",

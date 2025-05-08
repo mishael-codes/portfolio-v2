@@ -25,6 +25,8 @@ const Home = () => {
                   1200,
                   "React Developer.",
                   1200,
+                  "Webflow Developer.",
+                  1200,
                   /* "Vue Developer",
                   1000, */
                 ]}

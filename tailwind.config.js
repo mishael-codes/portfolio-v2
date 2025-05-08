@@ -6,7 +6,7 @@ export default {
       colors: {
         background: "hsl(0, 0%, 5%)",
         textColor: "hsl(0, 0%, 93%)",
-        accentColor: "hsl(94, 91%, 57%)",
+        accentColor: "hsl(51, 100%, 50%)",
         shadowColor: "hsl(217, 10%, 25%)",
       },
     },

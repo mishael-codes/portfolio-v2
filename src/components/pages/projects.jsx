@@ -72,7 +72,7 @@ const Projects = () => {
               key={project.liveUrl}
               className="project-container mb-10 text-center p-3"
             >
-              <img className="rounded-xl mb-7" src={project.img} alt="" />
+              <img className=" mb-7" src={project.img} alt="" />
               <div className="mb-10">
                 <h3 className="text-accentColor font-semibold">
                   {project.name}
@@ -83,7 +83,7 @@ const Projects = () => {
               <div className="links relative">
                 <a
                   href={project.liveUrl}
-                  className="font-semibold rounded-xl bg-accentColor text-background p-2 mx-3 hover:bg-transparent hover:text-accentColor border-accentColor border-2 transition-all"
+                  className="font-semibold bg-accentColor text-background p-2 mx-3 hover:bg-transparent hover:text-accentColor border-accentColor border-2 rounded-lg transition-all duration-500"
                   rel="noreferrer"
                   target="_blank"
                 >
@@ -91,7 +91,7 @@ const Projects = () => {
                 </a>
                 <a
                   href={project.gitUrl}
-                  className="font-medium rounded-xl bg-shadowColor text-textColor p-2 mx-3 hover:bg-transparent border-shadowColor border-2 transition-all"
+                  className="font-medium bg-shadowColor text-textColor p-2 mx-3 hover:bg-transparent border-shadowColor border-2 rounded-lg transition-all duration-500"
                   rel="noreferrer"
                   target="_blank"
                 >
@@ -105,7 +105,7 @@ const Projects = () => {
           href="https://github.com/mishael-codes"
           rel="noreferrer"
           target="_blank"
-          className="relative z-10 bg-background text-accentColor border-b-2 border-accentColor mb-10 see-more transition-all overflow-hidden py-2"
+          className="font-semibold bg-accentColor text-background p-2 mx-3 hover:bg-transparent hover:text-accentColor border-accentColor border-2 rounded-lg transition-all mb-10 duration-500"
         >
           <button className="px-4">See More on GitHub</button>
         </a>

@@ -10,26 +10,28 @@ const About = () => {
           </div>
           <div className="w-full p-6 text-textColor md:text-xl lg:ml-24 lg:flex lg:flex-col lg:items-start lg:justify-center lg:mt-6 xl:mt-0 lg:h-auto lg:w-3/4">
             <p className="first-letter:text-2xl md:first-letter:text-3xl first-letter:text-accentColor first-letter:font-semibold indent-3 mb-2">
-              Hello, it&apos;s nice to see that you&apos;re here👋. Here&apos;s
-              a little knowledge about me.
+              Hey, glad you&apos;re here 👋 I&apos;m Mishael, a frontend
+              developer who started coding in 2021 with just a few lines of HTML
+              — and I haven&apos;t looked back since. I love bringing ideas to
+              life through clean, responsive, and user-focused web experiences.
             </p>
             <p className="first-letter:text-2xl md:first-letter:text-3xl first-letter:text-accentColor first-letter:font-semibold indent-3 mb-2">
-              I wrote my first line of code in 2021, It was in HTML and ever
-              since then, I have always wanted to learn more to see what I can
-              build and how I can be of importance in creating websites which
-              offer information, entertainment, education and so on to the
-              public.
+              Whether you&apos;re a company looking for a reliable developer to
+              join your team, or a client needing a polished website to boost
+              your brand — I&apos;m all about delivering solid results with
+              clarity and style.
             </p>
             <p className="first-letter:text-2xl md:first-letter:text-3xl first-letter:text-accentColor first-letter:font-semibold indent-3 mb-2">
-              As a side note, I have a little bit of interest in game
-              development and hope to venture into it some time in the future. I
-              also have an interest in photography, nature photography to be
-              precise. I read webtoons in my spare time and I listen to music
-              with every chance I get.
+              I’m especially interested in building websites that inform,
+              entertain, and educate. On the side, I&apos;m exploring game
+              development and have a thing for nature photography — helps me
+              recharge and stay creative. I&apos;m also into webtoons and never
+              say no to good music.
             </p>
             <p className="first-letter:text-2xl md:first-letter:text-3xl first-letter:text-accentColor first-letter:font-semibold indent-3">
-              I hope that was enough for a basic introduction. Let&apos;s work
-              together to fulfill both your dreams and mine, shall we?
+              If you&apos;re into meaningful work, clean UI, and collaboration
+              that flows, let&apos;s connect and build something awesome
+              together.
             </p>
           </div>
         </div>

@@ -9,6 +9,9 @@ const Nav = () => {
     { name: "Skills", dest: "/skills", id: 3 },
     { name: "Projects", dest: "/projects", id: 4 },
     { name: "Contact", dest: "/contact", id: 5 },
+    /* { name: "For Clients", dest: "/for-clients", id: 4 },
+    { name: "For Employers", dest: "/for-employers", id: 5 }, */
+    // { name: "Contact", dest: "/contact", id: 6 },
   ]);
 
   return (

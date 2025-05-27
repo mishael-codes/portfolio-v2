@@ -8,7 +8,7 @@ import {
   faGithub,
   faSquareGit,
 } from "@fortawesome/free-brands-svg-icons";
-import tailwindCss from "../../assets/icons/tailwindcss.svg";
+import tailwindCss from "../../assets/icons/tailwindcss.jsx";
 import "../../App.css";
 
 const Skills = () => {

@@ -26,10 +26,12 @@ function App() {
 
   return (
     <>
-        <a href="#main-content" className="skip-link">Skip to content</a>
-        <Nav />
+      <a href="#main-content" className="skip-link">
+        Skip to content
+      </a>
+      <Nav />
 
-        <main id="main-content" className="w-full">
+      <main id="main-content" className="w-full">
         <section id="home" data-reveal className="min-h-screen">
           <Home />
         </section>

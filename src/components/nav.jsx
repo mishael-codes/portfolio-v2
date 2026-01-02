@@ -15,7 +15,8 @@ const Nav = () => {
   // close on outside click
   useEffect(() => {
     const handler = (e) => {
-      if (open && menuRef.current && !menuRef.current.contains(e.target)) setOpen(false);
+      if (open && menuRef.current && !menuRef.current.contains(e.target))
+        setOpen(false);
     };
     document.addEventListener("mousedown", handler);
     return () => document.removeEventListener("mousedown", handler);
@@ -29,7 +30,10 @@ const Nav = () => {
         </h1>
       </div>
 
-      <nav className="hidden md:flex w-full justify-center text-textColor md:w-1/2 lg:text-xl gap-6" aria-label="Primary navigation">
+      <nav
+        className="hidden md:flex w-full justify-center text-textColor md:w-1/2 lg:text-xl gap-6"
+        aria-label="Primary navigation"
+      >
         {links.map((link) => (
           <a
             key={link.id}
@@ -52,7 +56,10 @@ const Nav = () => {
             {open ? "✕" : "☰"}
           </button>
           {open && (
-            <div role="menu" className="absolute right-4 mt-2 w-48 bg-background text-textColor rounded shadow-lg p-3">
+            <div
+              role="menu"
+              className="absolute right-4 mt-2 w-48 bg-background text-textColor rounded shadow-lg p-3"
+            >
               {links.map((link) => (
                 <a
                   key={link.id}

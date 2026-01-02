@@ -37,7 +37,9 @@ const Contact = () => {
             method="POST"
             className="flex flex-col items-center justify-start w-3/4"
           >
-            <label htmlFor="contact-name" className="sr-only">Full name</label>
+            <label htmlFor="contact-name" className="sr-only">
+              Full name
+            </label>
             <input
               id="contact-name"
               type="text"
@@ -45,7 +47,9 @@ const Contact = () => {
               placeholder="John Doe"
               className="text-textColor w-full mb-6 bg-shadowColor p-2 rounded-lg opacity-70 caret-accentColor focus:outline-none focus:ring-2 focus:ring-accentColor/40"
             />
-            <label htmlFor="contact-email" className="sr-only">Email address</label>
+            <label htmlFor="contact-email" className="sr-only">
+              Email address
+            </label>
             <input
               id="contact-email"
               type="email"
@@ -53,7 +57,9 @@ const Contact = () => {
               placeholder="johndoe@gmail.com"
               className="text-textColor w-full mb-6 bg-shadowColor p-2 rounded-lg opacity-70 caret-accentColor focus:outline-none focus:ring-2 focus:ring-accentColor/40"
             />
-            <label htmlFor="contact-message" className="sr-only">Message</label>
+            <label htmlFor="contact-message" className="sr-only">
+              Message
+            </label>
             <textarea
               id="contact-message"
               name="message"

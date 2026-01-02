@@ -10,10 +10,10 @@ const About = () => {
           </div>
           <div className="w-full p-6 text-textColor md:text-xl lg:ml-24 lg:flex lg:flex-col lg:items-start lg:justify-center lg:mt-6 xl:mt-0 lg:h-auto lg:w-3/4">
             <p className="first-letter:text-2xl md:first-letter:text-3xl first-letter:text-accentColor first-letter:font-semibold indent-3 mb-2">
-              Hey — glad you&apos;re here. I&apos;m Mishael, a frontend developer
-              with a focus on crafting clear, responsive interfaces that solve
-              real user problems. I started building on the web in 2021 and
-              enjoy turning ideas into polished, maintainable products.
+              Hey — glad you&apos;re here. I&apos;m Mishael, a frontend
+              developer with a focus on crafting clear, responsive interfaces
+              that solve real user problems. I started building on the web in
+              2021 and enjoy turning ideas into polished, maintainable products.
             </p>
             <p className="first-letter:text-2xl md:first-letter:text-3xl first-letter:text-accentColor first-letter:font-semibold indent-3 mb-2">
               Whether you&apos;re a company looking for a reliable developer to

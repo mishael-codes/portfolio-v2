@@ -1,3 +1,149 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+	--background: #ffffff;
+	--textColor: #111827; /* gray-900 */
+	--accentColor: #f59e0b; /* amber-500 */
+	--shadowColor: rgba(15, 23, 42, 0.6);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+html, body, #root {
+	background-color: var(--background);
+	color: var(--textColor);
+	min-height: 100%;
+}
+
+/* accessibility helpers */
+.skip-link {
+	position: absolute;
+	left: -9999px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+.skip-link:focus {
+	left: 1rem;
+	top: 1rem;
+	width: auto;
+	height: auto;
+	padding: 0.5rem 0.75rem;
+	background: var(--background);
+	color: var(--textColor);
+	border-radius: 6px;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+	z-index: 60;
+}
+
+/* visually hidden for labels */
+.sr-only {
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	padding: 0 !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	clip: rect(0, 0, 0, 0) !important;
+	white-space: nowrap !important;
+	border: 0 !important;
+}
+
+/* focus-visible ring for keyboard users */
+:focus-visible {
+	outline: 3px solid rgba(99,102,241,0.25);
+	outline-offset: 2px;
+}
+
+/* respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.001ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.001ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+/* simple reveal animation for sections */
+[data-reveal] {
+	opacity: 0;
+	transform: translateY(18px);
+	transition: opacity 600ms cubic-bezier(.2,.8,.2,1), transform 600ms cubic-bezier(.2,.8,.2,1);
+}
+
+[data-reveal].visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* small utility for header glass effect */
+.glass {
+	background: rgba(255,255,255,0.03);
+}
+
+/* dark-mode adjustments for custom classes used in components */
+.dark .glass {
+	background: rgba(0,0,0,0.4);
+}
+
+/* theme-aware overrides for Tailwind custom color classes (placed after utilities)
+	 These map the project's color names to CSS variables so toggling .dark affects everything */
+:root {
+	/* light theme values */
+	--background: #ffffff;
+	--textColor: #0f172a; /* darker text */
+	--accentColor: hsl(51, 100%, 50%);
+	--shadowColor: rgba(15,23,42,0.06);
+}
+
+.dark,
+html.dark {
+	--background: #050505;
+	--textColor: #edf2f7; /* near white */
+	--accentColor: hsl(51, 100%, 50%);
+	--shadowColor: rgba(0,0,0,0.5);
+}
+
+/* map the Tailwind-generated utility class names to the variables */
+.text-textColor { color: var(--textColor) !important; }
+.bg-background { background-color: var(--background) !important; }
+.text-accentColor { color: var(--accentColor) !important; }
+.bg-accentColor { background-color: var(--accentColor) !important; }
+.border-accentColor { border-color: var(--accentColor) !important; }
+.bg-shadowColor { background-color: var(--shadowColor) !important; }
+.shadow-shadowColor { box-shadow: 0 10px 15px -3px var(--shadowColor) !important; }
+
+/* form inputs and other places that rely on bg-shadowColor */
+input.bg-shadowColor, textarea.bg-shadowColor { background-color: var(--shadowColor) !important; }
+
+/* helper to clamp long descriptions (requires tailwind/line-clamp plugin if available) */
+.line-clamp-3 {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+/* button fallback styles using variables for consistency */
+.btn-primary {
+	background: var(--accentColor);
+	color: var(--background);
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
+	font-weight: 600;
+}
+
+.btn-outline {
+	background: transparent;
+	color: var(--textColor);
+	border: 1px solid var(--shadowColor);
+	padding: 0.45rem 0.9rem;
+	border-radius: 0.5rem;
+}

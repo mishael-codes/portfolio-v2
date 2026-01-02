@@ -16,8 +16,10 @@ const Home = () => {
           {/* introduction starts */}
           <div className="w-full md:w-1/2 text-justify -mt-5 md:text-3xl flex items-center justify-center flex-col lg:mr-20">
             <p className="text-textColor opacity-100">
-              Hello, <strong className="text-accentColor">Mishael</strong> here.
-              I am a <br />
+              Hi — I&apos;m <strong className="text-accentColor">Mishael Enyi</strong>.
+              <br />
+              I build modern, accessible web interfaces that scale.
+              <br />
               <TypeAnimation
                 preRenderFirstString={true}
                 sequence={[
@@ -40,9 +42,8 @@ const Home = () => {
               <br />
               <br />
               <span className="text-gray-400">
-                I speak to computers through code to bring you a pixel-perfect
-                replica of your designs, making them functional, responsive and
-                immersive.
+                I turn designs into fast, responsive experiences using React
+                and modern CSS — focused on usability, performance and detail.
               </span>
             </p>
             {/* cta */}
@@ -52,8 +53,7 @@ const Home = () => {
                   href="mailto:enyimishael22@gmail.com"
                   className="w-full h-full"
                 >
-                  &nbsp; Send a mail{" "}
-                  <FontAwesomeIcon icon={faEnvelope} size="lg" />
+                  &nbsp; Hire me <FontAwesomeIcon icon={faEnvelope} size="lg" />
                 </a>
               </button>
               <button className="hover:border border-l-accentColor border-t-accentColor border-r-textColor border-b-textColor hover:text-accentColor hover:-translate-y-1 active:translate-y-1 transition-all p-2 rounded">

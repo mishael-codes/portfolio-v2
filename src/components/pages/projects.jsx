@@ -72,7 +72,7 @@ const Projects = () => {
               key={project.liveUrl}
               className="project-container mb-10 text-center p-3"
             >
-              <img className=" mb-7" src={project.img} alt="" />
+              <img className="mb-7 w-full h-auto object-cover rounded" src={project.img} alt={`${project.name} screenshot`} />
               <div className="mb-10">
                 <h3 className="text-accentColor font-semibold">
                   {project.name}
@@ -86,32 +86,68 @@ const Projects = () => {
                   className="font-semibold bg-accentColor text-background p-2 mx-3 hover:bg-transparent hover:text-accentColor border-accentColor border-2 rounded-lg transition-all duration-500"
                   rel="noreferrer"
                   target="_blank"
-                >
-                  Live Site
-                </a>
-                <a
-                  href={project.gitUrl}
-                  className="font-medium bg-shadowColor text-textColor p-2 mx-3 hover:bg-transparent border-shadowColor border-2 rounded-lg transition-all duration-500"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  GitHub Link
-                </a>
-              </div>
-            </div>
-          ))}
-        </div>
-        <a
-          href="https://github.com/mishael-codes"
-          rel="noreferrer"
-          target="_blank"
-          className="font-semibold bg-accentColor text-background p-2 mx-3 hover:bg-transparent hover:text-accentColor border-accentColor border-2 rounded-lg transition-all mb-10 duration-500"
-        >
-          <button className="px-4">See More on GitHub</button>
-        </a>
-      </div>
-    </>
-  );
-};
+                return (
+                  <>
+                    <div className="max-w-7xl mx-auto p-6">
+                      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                        {someProjects.map((project) => (
+                          <article
+                            key={project.liveUrl}
+                            className="group bg-background border border-transparent dark:border-gray-700 rounded-xl overflow-hidden shadow-md hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300"
+                          >
+                            <div className="relative h-44 sm:h-56">
+                              <img
+                                src={project.img}
+                                alt={`${project.name} screenshot`}
+                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                              />
+                              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" aria-hidden="true"></div>
+                            </div>
 
-export default Projects;
+                            <div className="p-4">
+                              <h3 className="text-accentColor font-semibold text-lg">
+                                {project.name}
+                              </h3>
+                              <p className="mt-2 text-sm text-textColor line-clamp-3">
+                                {project.description}
+                              </p>
+
+                              <div className="mt-4 flex flex-wrap gap-3">
+                                <a
+                                  href={project.liveUrl}
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  aria-label={`Open ${project.name} live site`}
+                                  className="inline-flex items-center gap-2 px-3 py-2 bg-accentColor text-background rounded-md font-semibold hover:opacity-95 focus:outline-none focus:ring-2 focus:ring-accentColor/50"
+                                >
+                                  Live
+                                </a>
+
+                                <a
+                                  href={project.gitUrl}
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  aria-label={`Open ${project.name} repository`}
+                                  className="inline-flex items-center gap-2 px-3 py-2 border border-[color:var(--shadowColor)] text-textColor rounded-md bg-transparent hover:bg-shadowColor/10 focus:outline-none focus:ring-2 focus:ring-accentColor/30"
+                                >
+                                  Code
+                                </a>
+                              </div>
+                            </div>
+                          </article>
+                        ))}
+                      </div>
+
+                      <div className="mt-8 text-center">
+                        <a
+                          href="https://github.com/mishael-codes"
+                          rel="noreferrer"
+                          target="_blank"
+                          className="inline-flex items-center gap-2 px-5 py-3 bg-accentColor text-background rounded-lg font-semibold hover:opacity-95 focus:outline-none focus:ring-2 focus:ring-accentColor/50"
+                        >
+                          See More on GitHub
+                        </a>
+                      </div>
+                    </div>
+                  </>
+                );

@@ -54,6 +54,8 @@ const Skills = () => {
               src={tailwindCss}
               alt="tailwindcss"
               className="w-[75px] h-[75px]"
+              loading="lazy"
+              decoding="async"
             />
             <FontAwesomeIcon
               icon={faReact}

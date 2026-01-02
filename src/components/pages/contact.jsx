@@ -29,6 +29,8 @@ const Contact = () => {
             src={heroImg2}
             alt="mishael's bitmoji winking at you"
             className="scale-75 -mt-20 md:scale-[0.7] md:w-1/2"
+            loading="lazy"
+            decoding="async"
           />
           <form
             action="https://formsubmit.co/b9f4abecb9eb8534b77c5be72594bf95"

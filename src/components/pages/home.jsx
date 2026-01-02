@@ -12,6 +12,9 @@ const Home = () => {
             src={heroImage}
             alt="mishael's bitmoji popping out and waving from a laptop"
             className=" md:w-1/2 scale-[.70] relative -top-24"
+            loading="eager"
+            fetchPriority="high"
+            decoding="sync"
           />
           {/* introduction starts */}
           <div className="w-full md:w-1/2 text-justify -mt-5 md:text-3xl flex items-center justify-center flex-col lg:mr-20">

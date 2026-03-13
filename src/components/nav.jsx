@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import ThemeToggle from "./ThemeToggle";
+
 
 const Nav = () => {
   const [links] = useState([
@@ -75,9 +75,7 @@ const Nav = () => {
           )}
         </div>
 
-        <div className="hidden md:block">
-          <ThemeToggle />
-        </div>
+
       </div>
     </header>
   );

@@ -17,136 +17,115 @@ const Contact = () => {
   };
 
   let reply = `Hey there ${userEmail}, thank you for contacting me. Please wait patiently as I get back to you`;
+  
   return (
-    <>
-      <div className="relative h-auto w-screen lg:w-3/5 lg:mx-auto flex flex-col items-center">
-        <h1 className="mt-4 text-textColor text-xl font-semibold uppercase underline underline-offset-2 decoration-accentColor md:mb-8">
-          Contact
-        </h1>
-        {/* contact form */}
-        <div className="flex items-center justify-center flex-col md:flex-row">
+    <div className="relative px-6 py-16 w-full max-w-6xl mx-auto flex flex-col items-center">
+      
+      <div className="w-full text-center mb-12 relative z-10">
+        <h2 className="inline-block text-3xl font-bold tracking-wider uppercase text-white relative">
+          Get in Touch
+          <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-1/2 h-1 bg-accentColor rounded-full"></div>
+        </h2>
+        <p className="mt-8 text-gray-400 text-lg">
+          Have a project in mind or just want to say hi? Feel free to reach out.
+        </p>
+      </div>
+
+      <div className="w-full flex flex-col md:flex-row items-center justify-center gap-12 relative z-10">
+        
+        {/* Left Side: Avatar */}
+        <div className="w-full md:w-5/12 flex justify-center relative group">
+          <div className="absolute inset-0 bg-gradient-to-tr from-accentColor/10 to-transparent rounded-full blur-3xl opacity-40 group-hover:opacity-70 transition-opacity duration-700"></div>
           <img
             src={heroImg2}
-            alt="mishael's bitmoji winking at you"
-            className="scale-75 -mt-20 md:scale-[0.7] md:w-1/2"
+            alt="mishael's bitmoji winking"
+            className="w-[70%] max-w-sm relative z-10 drop-shadow-2xl hover:scale-105 transition-transform duration-500"
             loading="lazy"
             decoding="async"
           />
+        </div>
+
+        {/* Right Side: Form */}
+        <div className="w-full md:w-7/12 max-w-lg">
           <form
             action="https://formsubmit.co/b9f4abecb9eb8534b77c5be72594bf95"
             method="POST"
-            className="flex flex-col items-center justify-start w-3/4"
+            className="glass p-8 rounded-3xl flex flex-col gap-5 border border-white/5 shadow-2xl"
           >
-            <label htmlFor="contact-name" className="sr-only">
-              Full name
-            </label>
-            <input
-              id="contact-name"
-              type="text"
-              name="Full Name"
-              placeholder="John Doe"
-              className="text-textColor w-full mb-6 bg-shadowColor p-2 rounded-lg opacity-70 caret-accentColor focus:outline-none focus:ring-2 focus:ring-accentColor/40"
-            />
-            <label htmlFor="contact-email" className="sr-only">
-              Email address
-            </label>
-            <input
-              id="contact-email"
-              type="email"
-              name="email"
-              placeholder="johndoe@gmail.com"
-              className="text-textColor w-full mb-6 bg-shadowColor p-2 rounded-lg opacity-70 caret-accentColor focus:outline-none focus:ring-2 focus:ring-accentColor/40"
-            />
-            <label htmlFor="contact-message" className="sr-only">
-              Message
-            </label>
-            <textarea
-              id="contact-message"
-              name="message"
-              rows="7"
-              placeholder="Type your message"
-              className="text-textColor w-full mb-6 bg-shadowColor p-2 rounded-lg opacity-70 caret-accentColor focus:outline-none focus:ring-2 focus:ring-accentColor/40"
-              required
-            ></textarea>
-            <input
-              type="hidden"
-              name="_subject"
-              value="Hey Mishael, New Mail"
-            ></input>
-            <input type="hidden" name="_autoresponse" value={reply}></input>
-            <input type="hidden" name="_template" value="table"></input>
-            <input
-              type="hidden"
-              name="_next"
-              value="https://mishaelenyi.netlify.app"
-            ></input>
+            <div>
+              <label htmlFor="contact-name" className="sr-only">Full name</label>
+              <input
+                id="contact-name"
+                type="text"
+                name="Full Name"
+                placeholder="Name"
+                className="w-full bg-white/5 text-white border border-white/10 p-4 rounded-xl placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-accentColor/50 focus:border-accentColor/50 transition-all font-medium"
+                required
+              />
+            </div>
+            
+            <div>
+              <label htmlFor="contact-email" className="sr-only">Email address</label>
+              <input
+                id="contact-email"
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                className="w-full bg-white/5 text-white border border-white/10 p-4 rounded-xl placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-accentColor/50 focus:border-accentColor/50 transition-all font-medium"
+                required
+              />
+            </div>
+
+            <div>
+              <label htmlFor="contact-message" className="sr-only">Message</label>
+              <textarea
+                id="contact-message"
+                name="message"
+                rows="5"
+                placeholder="Your Message..."
+                className="w-full bg-white/5 text-white border border-white/10 p-4 rounded-xl placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-accentColor/50 focus:border-accentColor/50 transition-all font-medium resize-none"
+                required
+              ></textarea>
+            </div>
+
+            {/* Hidden form inputs */}
+            <input type="hidden" name="_subject" value="Hey Mishael, New Mail" />
+            <input type="hidden" name="_autoresponse" value={reply} />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_next" value="https://mishaelenyi.netlify.app/thank-you" />
+
             <button
               onClick={submit}
               type="submit"
-              className="w-full bg-accentColor text-background font-semibold p-2 rounded-lg hover:bg-transparent hover:text-accentColor border-accentColor border-2 transition-all"
+              className="w-full bg-accentColor text-background font-bold text-lg py-4 rounded-xl hover:bg-yellow-400 hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(245,158,11,0.3)] transition-all active:translate-y-0"
             >
-              SUBMIT
+              Send Message
             </button>
           </form>
         </div>
-        <div className="w-full flex items-center justify-evenly mt-14 mb-8 md:mb-0">
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/mishael-codes"
-          >
-            <FontAwesomeIcon
-              icon={faGithub}
-              size="2xl"
-              className="text-textColor hover:text-accentColor hover:scale-150 transition-all"
-            />
-          </a>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.linkedin.com/in/mishael-enyi/"
-          >
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              size="2xl"
-              className="text-textColor hover:text-accentColor hover:scale-150 transition-all"
-            />
-          </a>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://cuttr.vercel.app/whatsapp"
-          >
-            <FontAwesomeIcon
-              icon={faWhatsapp}
-              size="2xl"
-              className="text-textColor hover:text-accentColor hover:scale-150 transition-all"
-            />
-          </a>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://twitter.com/mishael_codes"
-          >
-            <FontAwesomeIcon
-              icon={faXTwitter}
-              size="2xl"
-              className="text-textColor hover:text-accentColor hover:scale-150 transition-all"
-            />
-          </a>
-        </div>
-        <div className="hidden lg:block overflow-x-hidden">
-          <div>
-            <div className="absolute top-1/4 -right-40 w-[75px] h-[75px] shadow-lg shadow-black bg-shadowColor rounded-full opacity-70 dark-circle"></div>
-            <div className="absolute top-2/4 -right-40 w-[75px] h-[75px] shadow-lg shadow-black bg-accentColor rounded-full opacity-70 yellow-circle"></div>
-            <div className="absolute top-3/4 -right-40 w-[75px] h-[75px] shadow-lg shadow-black bg-textColor rounded-full opacity-70 ash-circle"></div>
-            <div className="absolute top-1/4 -left-40 w-[75px] h-[75px] shadow-lg shadow-black bg-shadowColor rounded-full opacity-70 dark-circle-left"></div>
-            <div className="absolute top-2/4 -left-40 w-[75px] h-[75px] shadow-lg shadow-black bg-accentColor rounded-full opacity-70 yellow-circle-left"></div>
-            <div className="absolute top-3/4 -left-40 w-[75px] h-[75px] shadow-lg shadow-black bg-textColor rounded-full opacity-70 ash-circle-left"></div>
-          </div>
-        </div>
       </div>
-    </>
+
+      {/* Social Links Fixed to Bottom/Bottom-ish of Contact Section */}
+      <div className="w-full mt-16 flex items-center justify-center gap-8 relative z-10 glass mx-auto rounded-full py-4 max-w-sm border border-white/5">
+        <a target="_blank" rel="noreferrer" href="https://github.com/mishael-codes" className="group" aria-label="Visit my GitHub profile">
+          <FontAwesomeIcon icon={faGithub} className="text-2xl text-gray-400 group-hover:text-white group-hover:-translate-y-2 group-hover:scale-110 transition-all duration-300 drop-shadow-md" />
+        </a>
+        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/mishael-enyi/" className="group" aria-label="Visit my LinkedIn profile">
+          <FontAwesomeIcon icon={faLinkedin} className="text-2xl text-gray-400 group-hover:text-[#0A66C2] group-hover:-translate-y-2 group-hover:scale-110 transition-all duration-300 drop-shadow-md" />
+        </a>
+        <a target="_blank" rel="noreferrer" href="https://cuttr.vercel.app/whatsapp" className="group" aria-label="Contact me on WhatsApp">
+          <FontAwesomeIcon icon={faWhatsapp} className="text-2xl text-gray-400 group-hover:text-[#25D366] group-hover:-translate-y-2 group-hover:scale-110 transition-all duration-300 drop-shadow-md" />
+        </a>
+        <a target="_blank" rel="noreferrer" href="https://twitter.com/mishael_codes" className="group" aria-label="Visit my Twitter profile">
+          <FontAwesomeIcon icon={faXTwitter} className="text-2xl text-gray-400 group-hover:text-white group-hover:-translate-y-2 group-hover:scale-110 transition-all duration-300 drop-shadow-md" />
+        </a>
+      </div>
+
+      {/* Background Decorative Orbs */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
+         <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-accentColor rounded-full opacity-[0.05] blur-[120px]"></div>
+      </div>
+    </div>
   );
 };
 

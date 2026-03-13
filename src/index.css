@@ -2,10 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Use the same variables defined lower down */
 :root {
-	--background: #ffffff;
-	--textColor: #111827; /* gray-900 */
-	--accentColor: #f59e0b; /* amber-500 */
+	/* dark theme values */
+	--background: hsl(0, 0%, 5%);
+	--textColor: hsl(0, 0%, 93%);
+	--accentColor: hsl(51, 100%, 50%);
 	--shadowColor: rgba(15, 23, 42, 0.6);
 }
 
@@ -87,28 +89,7 @@ html, body, #root {
 	background: rgba(255,255,255,0.03);
 }
 
-/* dark-mode adjustments for custom classes used in components */
-.dark .glass {
-	background: rgba(0,0,0,0.4);
-}
 
-/* theme-aware overrides for Tailwind custom color classes (placed after utilities)
-	 These map the project's color names to CSS variables so toggling .dark affects everything */
-:root {
-	/* light theme values */
-	--background: #ffffff;
-	--textColor: #0f172a; /* darker text */
-	--accentColor: hsl(51, 100%, 50%);
-	--shadowColor: rgba(15,23,42,0.06);
-}
-
-.dark,
-html.dark {
-	--background: #050505;
-	--textColor: #edf2f7; /* near white */
-	--accentColor: hsl(51, 100%, 50%);
-	--shadowColor: rgba(0,0,0,0.5);
-}
 
 /* map the Tailwind-generated utility class names to the variables */
 .text-textColor { color: var(--textColor) !important; }

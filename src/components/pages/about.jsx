@@ -1,49 +1,47 @@
 const About = () => {
   return (
     <>
-      <div className="relative px-3 h-auto w-screen lg:w-3/5 lg:mx-auto flex flex-col items-center text-textColor">
-        <div className="h-auto">
-          <div className="w-full text-center">
-            <h1 className=" left-2/4 z-10 text-textColor text-xl font-semibold uppercase underline underline-offset-2 decoration-accentColor mt-3 md:text-3xl">
-              About
-            </h1>
+      <div className="relative px-6 py-16 w-full lg:w-4/5 xl:w-3/4 mx-auto flex flex-col items-center">
+        <div className="w-full relative z-10">
+          <div className="w-full text-center mb-16">
+            <h2 className="inline-block text-3xl font-bold tracking-wider uppercase text-white relative">
+              About Me
+              <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-1/2 h-1 bg-accentColor rounded-full"></div>
+            </h2>
           </div>
-          <div className="w-full p-6 text-textColor md:text-xl lg:ml-24 lg:flex lg:flex-col lg:items-start lg:justify-center lg:mt-6 xl:mt-0 lg:h-auto lg:w-3/4">
-            <p className="first-letter:text-2xl md:first-letter:text-3xl first-letter:text-accentColor first-letter:font-semibold indent-3 mb-2">
-              Hey — glad you&apos;re here. I&apos;m Mishael, a frontend
+
+          <div className="w-full max-w-4xl mx-auto glass rounded-3xl p-8 md:p-12 text-gray-300 text-lg leading-relaxed shadow-2xl space-y-6">
+            <p>
+              Hey — glad you&apos;re here. I&apos;m <span className="text-white font-semibold">Mishael</span>, a frontend
               developer with a focus on crafting clear, responsive interfaces
               that solve real user problems. I started building on the web in
               2021 and enjoy turning ideas into polished, maintainable products.
             </p>
-            <p className="first-letter:text-2xl md:first-letter:text-3xl first-letter:text-accentColor first-letter:font-semibold indent-3 mb-2">
+            <p>
               Whether you&apos;re a company looking for a reliable developer to
               join your team, or a client needing a polished website to boost
               your brand — I&apos;m all about delivering solid results with
               clarity and style.
             </p>
-            <p className="first-letter:text-2xl md:first-letter:text-3xl first-letter:text-accentColor first-letter:font-semibold indent-3 mb-2">
+            <p>
               I’m especially interested in building websites that inform,
               entertain, and educate. On the side, I&apos;m exploring game
               development and have a thing for nature photography — helps me
-              recharge and stay creative. I&apos;m also into webtoons and never
+              recharge and stay creative. I&apos;m also into <span className="text-accentColor font-medium">webtoons</span> and never
               say no to good music.
             </p>
-            <p className="first-letter:text-2xl md:first-letter:text-3xl first-letter:text-accentColor first-letter:font-semibold indent-3">
+            <p className="text-white font-medium border-l-4 border-accentColor pl-4 mt-8 italic">
               If you value thoughtful interfaces, fast performance and
               straightforward collaboration, I&apos;d love to hear about your
               project — let&apos;s build something that works and delights.
             </p>
           </div>
         </div>
-        <div className="hidden lg:block overflow-x-hidden">
-          <div>
-            <div className="absolute top-1/4 -right-40 w-[75px] h-[75px] shadow-lg shadow-black bg-shadowColor rounded-full opacity-70 dark-circle"></div>
-            <div className="absolute top-2/4 -right-40 w-[75px] h-[75px] shadow-lg shadow-black bg-accentColor rounded-full opacity-70 yellow-circle"></div>
-            <div className="absolute top-3/4 -right-40 w-[75px] h-[75px] shadow-lg shadow-black bg-textColor rounded-full opacity-70 ash-circle"></div>
-            <div className="absolute top-1/4 -left-40 w-[75px] h-[75px] shadow-lg shadow-black bg-shadowColor rounded-full opacity-70 dark-circle-left"></div>
-            <div className="absolute top-2/4 -left-40 w-[75px] h-[75px] shadow-lg shadow-black bg-accentColor rounded-full opacity-70 yellow-circle-left"></div>
-            <div className="absolute top-3/4 -left-40 w-[75px] h-[75px] shadow-lg shadow-black bg-textColor rounded-full opacity-70 ash-circle-left"></div>
-          </div>
+
+        {/* Background Decorative Orbs */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
+          <div className="absolute top-1/4 -right-10 w-64 h-64 bg-accentColor rounded-full opacity-20 blur-[80px]"></div>
+          <div className="absolute bottom-1/4 -left-10 w-80 h-80 bg-blue-500 rounded-full opacity-10 blur-[100px]"></div>
         </div>
       </div>
     </>

@@ -1,10 +1,13 @@
 import { useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
 import Nav from "./components/nav.jsx";
 import About from "./components/pages/about";
 import Contact from "./components/pages/contact";
 import Home from "./components/pages/home";
 import Projects from "./components/pages/projects";
 import Skills from "./components/pages/skills";
+import ThankYou from "./components/pages/thankyou";
+import NotFound from "./components/pages/notFound";
 import "./App.css";
 
 function App() {
@@ -24,13 +27,12 @@ function App() {
     return () => obs.disconnect();
   }, []);
 
-  return (
+  const MainLayout = () => (
     <>
       <a href="#main-content" className="skip-link">
         Skip to content
       </a>
       <Nav />
-
       <main id="main-content" className="w-full">
         <section id="home" data-reveal className="min-h-screen">
           <Home />
@@ -53,6 +55,14 @@ function App() {
         </section>
       </main>
     </>
+  );
+
+  return (
+    <Routes>
+      <Route path="/" element={<MainLayout />} />
+      <Route path="/thank-you" element={<ThankYou />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   );
 }
 

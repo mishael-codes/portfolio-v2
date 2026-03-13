@@ -1,31 +1,28 @@
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faGhost } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft, faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons";
 
-const NotFound = () => {
+const ThankYou = () => {
   return (
     <div className="relative min-h-screen w-full flex items-center justify-center p-6 bg-transparent overflow-hidden">
       
       {/* Background Decorative Orbs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
-        <div className="absolute top-1/2 left-1/2 w-[600px] h-[600px] bg-red-600 rounded-full opacity-[0.05] blur-[150px] -translate-x-1/2 -translate-y-1/2"></div>
+        <div className="absolute top-1/2 left-1/2 w-[600px] h-[600px] bg-accentColor rounded-full opacity-[0.08] blur-[150px] -translate-x-1/2 -translate-y-1/2"></div>
       </div>
 
       <div className="glass max-w-2xl w-full mx-auto rounded-3xl p-10 md:p-16 text-center relative z-10 border border-white/10 shadow-2xl flex flex-col items-center">
         
-        <div className="w-24 h-24 bg-red-500/10 rounded-full flex items-center justify-center mb-8 shadow-[0_0_30px_rgba(220,38,38,0.2)]">
-          <FontAwesomeIcon icon={faGhost} className="text-5xl text-red-500 drop-shadow-lg animate-bounce" />
+        <div className="w-24 h-24 bg-accentColor/10 rounded-full flex items-center justify-center mb-8 shadow-[0_0_30px_rgba(245,158,11,0.2)]">
+          <FontAwesomeIcon icon={faEnvelopeOpenText} className="text-5xl text-accentColor drop-shadow-lg" />
         </div>
 
-        <h1 className="text-6xl md:text-8xl font-bold tracking-tight text-white mb-2">
-          404
+        <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-6">
+          Message <span className="text-accentColor">Received</span>!
         </h1>
-        <h2 className="text-2xl md:text-3xl font-semibold text-gray-200 mb-6">
-          Page <span className="text-accentColor">Not Found</span>
-        </h2>
         
-        <p className="text-gray-400 text-lg md:text-xl leading-relaxed mb-10 max-w-lg">
-          Sorry, but the page you are looking for does not exist. It might have been moved or deleted.
+        <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-10 max-w-lg">
+          Thank you for reaching out. I appreciate you taking the time to contact me. I&apos;ll get back to you as soon as possible!
         </p>
 
         <Link
@@ -41,4 +38,4 @@ const NotFound = () => {
   );
 };
 
-export default NotFound;
+export default ThankYou;

@@ -50,7 +50,7 @@ const Contact = () => {
           <form
             action="https://formsubmit.co/b9f4abecb9eb8534b77c5be72594bf95"
             method="POST"
-            className="glass p-8 rounded-3xl flex flex-col gap-5 border border-white/5 shadow-2xl"
+            className="glass p-6 md:p-8 rounded-3xl flex flex-col gap-5 border border-white/5 shadow-2xl"
           >
             <div>
               <label htmlFor="contact-name" className="sr-only">Full name</label>

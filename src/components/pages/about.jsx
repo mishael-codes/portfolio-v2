@@ -10,7 +10,7 @@ const About = () => {
             </h2>
           </div>
 
-          <div className="w-full max-w-4xl mx-auto glass rounded-3xl p-8 md:p-12 text-gray-300 text-lg leading-relaxed shadow-2xl space-y-6">
+          <div className="w-full max-w-4xl mx-auto glass rounded-3xl p-6 md:p-12 text-gray-300 text-base md:text-lg leading-relaxed shadow-2xl space-y-6">
             <p>
               Hey — glad you&apos;re here. I&apos;m <span className="text-white font-semibold">Mishael</span>, a frontend
               developer with a focus on crafting clear, responsive interfaces

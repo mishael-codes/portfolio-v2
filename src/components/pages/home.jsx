@@ -27,9 +27,9 @@ const Home = () => {
           </div>
 
           {/* introduction starts */}
-          <div className="w-full md:w-1/2 text-left -mt-8 md:mt-0 flex flex-col justify-center lg:pr-12">
+          <div className="w-full md:w-1/2 text-center md:text-left -mt-8 md:mt-0 flex flex-col justify-center lg:pr-12">
             
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-4">
               Hi, I&apos;m{" "}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-accentColor to-yellow-200">
                 Mishael
@@ -60,7 +60,7 @@ const Home = () => {
             </p>
 
             {/* cta */}
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
+            <div className="flex flex-col sm:flex-row items-center md:justify-start sm:gap-6 gap-4">
               
               <a
                 href="mailto:enyimishael22@gmail.com"

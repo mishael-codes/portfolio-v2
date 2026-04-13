@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Home = () => {
   return (
     <>
-      <div className="relative bg-transparent overflow-hidden">
+      <div className="relative bg-transparent">
         {/* Glow behind the hero section - Using theme-aware accent color */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accentColor rounded-full opacity-[0.05] blur-[100px] z-0 pointer-events-none"></div>
 
@@ -27,7 +27,7 @@ const Home = () => {
           </div>
 
           {/* introduction starts */}
-          <div className="w-full md:w-1/2 text-center md:text-left -mt-8 md:mt-0 flex flex-col justify-center lg:pr-12">
+          <div className="w-full md:w-1/2 text-center md:text-left mt-4 md:mt-0 flex flex-col justify-center lg:pr-12">
             
             <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-4">
               Hi, I&apos;m{" "}
@@ -56,7 +56,7 @@ const Home = () => {
             </div>
             
             <p className="text-textColor/70 text-lg sm:text-xl leading-relaxed max-w-xl mb-10">
-              I turn complex problems into elegant, fast, and responsive digital experiences. Focused on usability, performance, andpixel-perfect detail.
+              I turn complex problems into elegant, fast, and responsive digital experiences. Focused on usability, performance, and pixel-perfect detail.
             </p>
 
             {/* cta */}
@@ -67,7 +67,7 @@ const Home = () => {
                 className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 bg-accentColor text-background font-bold text-lg rounded-full overflow-hidden transition-transform hover:scale-[1.03] hover:shadow-[0_0_20px_rgba(245,158,11,0.4)] active:scale-95"
               >
                 <span className="relative z-10 flex items-center gap-2">
-                  Hire me <FontAwesomeIcon icon={faEnvelope} className="group-hover:animate-bounce" />
+                  Contact me <FontAwesomeIcon icon={faEnvelope} className="group-hover:animate-bounce" />
                 </span>
                 <div className="absolute inset-0 w-full h-full bg-white/20 -translate-x-full group-hover:animate-[shimmer_1s_infinite]"></div>
               </a>

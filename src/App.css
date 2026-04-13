@@ -151,18 +151,6 @@ nav a.active {
   }
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-  box-shadow: inset 0 0 5px var(--accentColor);
-  background-color: var(--background);
-}
-
-::-webkit-scrollbar-button,
-::-webkit-scrollbar-thumb {
-  background: var(--background);
-  border-radius: 3px;
-  border: 2px ridge var(--accentColor);
-}
 
 .see-more::before {
   content: "";

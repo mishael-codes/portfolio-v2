@@ -5,139 +5,49 @@ import socialDashboard from "../../assets/images/projects/Social Media Dashboard
 import huddle from "../../assets/images/projects/Huddle landing page.webp";
 import bmi from "../../assets/images/projects/Body Mass Index.webp";
 
-const Projects = () => {
-  const someProjects = [
-    {
-      name: "Cuttr",
-      gitUrl: "https://github.com/mishaelcodes/cuttr",
-      liveUrl: "https://cuttr.vercel.app",
-      img: cuttr,
-      description:
-        "Tame the link chaos! Cuttr lets you shorten, track, and manage all your links in one place. Gain valuable insights and simplify sharing.",
-    },
-    {
-      name: "The Min Game Hub",
-      gitUrl: "https://github.com/mishael-codes/the-min-game-hub",
-      liveUrl: "https://themingamehub.netlify.app",
-      img: gamehub,
-      description:
-        "An address on the internet where you can play some of the best games on the internet. Built with HTML, CSS and JavaScript.",
-    },
-    {
-      name: "SunnySide",
-      gitUrl:
-        "https://github.com/mishael-codes/sunnyside-agency-landing-page-main",
-      liveUrl:
-        "https://mishael-codes.github.io/sunnyside-agency-landing-page-main/",
-      img: sunnyside,
-      description:
-        "A landing page for a fictional branding agency. Built with HTML, CSS and JavaScript. Fully responsive mobile-first design.",
-    },
-    {
-      name: "Social Media Dashboard",
-      gitUrl:
-        "https://github.com/mishael-codes/social-media-dashboard-with-theme-switcher-master",
-      liveUrl:
-        "https://mishael-codes.github.io/social-media-dashboard-with-theme-switcher-master/",
-      img: socialDashboard,
-      description:
-        "A fully responsive social media tracking dashboard with light and dark themes. Built with HTML, CSS and JavaScript.",
-    },
-    {
-      name: "Huddle Landing Page",
-      gitUrl:
-        "https://github.com/mishael-codes/huddle-landing-page-with-alternating-feature-blocks-master",
-      liveUrl:
-        "https://mishael-codes.github.io/huddle-landing-page-with-alternating-feature-blocks-master/",
-      img: huddle,
-      description:
-        "Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users.",
-    },
-    {
-      name: "BMI Calculator",
-      gitUrl: "https://github.com/mishaelcodes/bmi-calc-v2",
-      liveUrl: "https://mishaelcodes.github.io/bmi-calc-v2/",
-      img: bmi,
-      description:
-        "A healthy living advocate body mass index calculator which helps to give the user clear feedback on their weight goals.",
-    },
-  ];
+const projects = [
+  { name: "Cuttr", type: "Product design", image: cuttr, liveUrl: "https://cuttr.vercel.app", gitUrl: "https://github.com/mishaelcodes/cuttr", description: "A focused link management tool with useful analytics and a calm workflow." },
+  { name: "The Min Game Hub", type: "Web experience", image: gamehub, liveUrl: "https://themingamehub.netlify.app", gitUrl: "https://github.com/mishael-codes/the-min-game-hub", description: "A playful home for discovering and playing browser games." },
+  { name: "SunnySide", type: "Landing page", image: sunnyside, liveUrl: "https://mishael-codes.github.io/sunnyside-agency-landing-page-main/", gitUrl: "https://github.com/mishael-codes/sunnyside-agency-landing-page-main", description: "A bright agency page built around strong type and clear sections." },
+  { name: "Social Media Dashboard", type: "Dashboard", image: socialDashboard, liveUrl: "https://mishael-codes.github.io/social-media-dashboard-with-theme-switcher-master/", gitUrl: "https://github.com/mishael-codes/social-media-dashboard-with-theme-switcher-master", description: "A responsive dashboard with light and dark themes." },
+  { name: "Huddle", type: "Community platform", image: huddle, liveUrl: "https://mishael-codes.github.io/huddle-landing-page-with-alternating-feature-blocks-master/", gitUrl: "https://github.com/mishael-codes/huddle-landing-page-with-alternating-feature-blocks-master", description: "A community landing page with a friendly, flexible layout." },
+  { name: "BMI Calculator", type: "Useful tool", image: bmi, liveUrl: "https://mishael-codes.github.io/bmi-calc-v2/", gitUrl: "https://github.com/mishaelcodes/bmi-calc-v2", description: "A small health tool that gives clear feedback at a glance." },
+];
 
-  return (
-    <div className="relative px-6 py-16 w-full max-w-7xl mx-auto flex flex-col items-center z-10">
-      
-      <div className="w-full text-center mb-16 relative z-10">
-        <h2 className="inline-block text-3xl font-bold tracking-wider uppercase text-textColor relative">
-          Featured Work
-          <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-1/2 h-1 bg-accentColor rounded-full"></div>
-        </h2>
+const Projects = () => (
+  <div className="section-shell">
+    <div className="mb-10 grid gap-6 md:grid-cols-[0.8fr_1.2fr] md:items-end">
+      <div>
+        <h2 className="section-title max-w-sm text-white">A few things I have made.</h2>
       </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 relative z-10 w-full">
-        {someProjects.map((project) => (
-          <div
-            key={project.liveUrl}
-            className="group glass rounded-2xl overflow-hidden flex flex-col hover:-translate-y-2 transition-all duration-300 hover:shadow-[0_10px_30px_rgba(245,158,11,0.1)] border border-white/5"
-          >
-            <div className="relative overflow-hidden aspect-video border-b border-white/5">
-              <img 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
-                src={project.img} 
-                alt={project.name} 
-                loading="lazy" 
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60"></div>
-            </div>
-            
-            <div className="p-6 flex flex-col flex-grow">
-              <h3 className="text-xl font-bold text-textColor mb-3 group-hover:text-accentColor transition-colors">
-                {project.name}
-              </h3>
-              <p className="text-textColor/70 text-sm leading-relaxed mb-8 flex-grow">
-                {project.description}
-              </p>
-
-              <div className="flex flex-wrap gap-3 mt-auto">
-                <a
-                  href={project.liveUrl}
-                  className="flex-1 text-center font-semibold bg-accentColor text-background px-4 py-2 hover:bg-white hover:text-black rounded-lg transition-all duration-300"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  Live Site
-                </a>
-                <a
-                  href={project.gitUrl}
-                  className="flex-1 text-center font-semibold bg-white/10 text-white px-4 py-2 hover:bg-white/20 border border-white/10 rounded-lg transition-all duration-300"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  GitHub
-                </a>
+      <p className="body-copy max-w-lg md:justify-self-end">
+        Small experiments and larger ideas, all made with attention to how people actually use them.
+      </p>
+    </div>
+    <div>
+      {projects.map((project, index) => (
+        <article className="project-row" key={project.name}>
+          <div className="project-image">
+            <img src={project.image} alt={`${project.name} project preview`} loading="lazy" />
+          </div>
+          <div className="flex flex-col justify-between gap-5">
+            <div>
+              <div className="mb-2 flex items-center justify-between gap-4">
+                <span className="font-mono text-xs text-yellow-300">0{index + 1} / {project.type}</span>
+                <span className="text-xs text-stone-500">2023 to 2024</span>
               </div>
+              <h3 className="text-2xl font-bold text-white md:text-3xl">{project.name}</h3>
+              <p className="mt-3 max-w-lg text-sm leading-7 text-stone-400">{project.description}</p>
+            </div>
+            <div className="flex gap-5 text-xs font-bold uppercase tracking-widest">
+              <a href={project.liveUrl} target="_blank" rel="noreferrer" className="text-yellow-300 hover:text-white">Visit site</a>
+              <a href={project.gitUrl} target="_blank" rel="noreferrer" className="text-stone-400 hover:text-white">Source code</a>
             </div>
           </div>
-        ))}
-      </div>
-
-      <div className="mt-16 text-center relative z-10">
-        <a
-          href="https://github.com/mishael-codes"
-          rel="noreferrer"
-          target="_blank"
-          className="inline-flex items-center justify-center px-8 py-3 bg-shadowColor/80 text-white font-semibold rounded-full border border-white/10 hover:border-accentColor/50 hover:text-accentColor transition-all duration-300 hover:shadow-[0_0_15px_rgba(245,158,11,0.2)]"
-        >
-          See More on GitHub
-        </a>
-      </div>
-
-      {/* Background Decorative Orbs */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
-        <div className="absolute top-1/4 -right-1/4 w-[500px] h-[500px] bg-accentColor rounded-full opacity-[0.08] blur-[150px]"></div>
-        <div className="absolute bottom-1/4 -left-1/4 w-[500px] h-[500px] bg-blue-500 rounded-full opacity-[0.05] blur-[150px]"></div>
-      </div>
+        </article>
+      ))}
     </div>
-  );
-};
+  </div>
+);
 
 export default Projects;

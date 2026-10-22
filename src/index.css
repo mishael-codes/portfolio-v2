@@ -2,135 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Use the same variables defined lower down */
-:root {
-	/* dark theme values */
-	--background: hsl(0, 0%, 5%);
-	--textColor: hsl(0, 0%, 93%);
-	--accentColor: hsl(51, 100%, 50%);
-	--shadowColor: rgba(15, 23, 42, 0.6);
-}
-
 html {
-	scroll-behavior: smooth;
-	background-color: var(--background);
-	color: var(--textColor);
-	overflow-x: hidden;
+  background: #090909;
+  color: #f4f0e8;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
-	min-height: 100vh;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
 }
 
 #root {
-	min-height: 100vh;
+  min-height: 100vh;
 }
 
+::selection {
+  background: #f5c542;
+  color: #090909;
+}
 
-/* accessibility helpers */
 .skip-link {
-	position: absolute;
-	left: -9999px;
-	top: auto;
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
+  left: -9999px;
+  position: absolute;
 }
+
 .skip-link:focus {
-	left: 1rem;
-	top: 1rem;
-	width: auto;
-	height: auto;
-	padding: 0.5rem 0.75rem;
-	background: var(--background);
-	color: var(--textColor);
-	border-radius: 6px;
-	box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-	z-index: 60;
+  background: #f5c542;
+  color: #090909;
+  left: 1rem;
+  padding: 0.75rem 1rem;
+  top: 1rem;
+  z-index: 60;
 }
 
-/* visually hidden for labels */
 .sr-only {
-	position: absolute !important;
-	width: 1px !important;
-	height: 1px !important;
-	padding: 0 !important;
-	margin: -1px !important;
-	overflow: hidden !important;
-	clip: rect(0, 0, 0, 0) !important;
-	white-space: nowrap !important;
-	border: 0 !important;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  clip: rect(0, 0, 0, 0);
 }
 
-/* focus-visible ring for keyboard users */
 :focus-visible {
-	outline: 3px solid rgba(99,102,241,0.25);
-	outline-offset: 2px;
+  outline: 2px solid #f5c542;
+  outline-offset: 3px;
 }
 
-/* respect reduced motion */
-@media (prefers-reduced-motion: reduce) {
-	* {
-		animation-duration: 0.001ms !important;
-		animation-iteration-count: 1 !important;
-		transition-duration: 0.001ms !important;
-		scroll-behavior: auto !important;
-	}
-}
-
-/* simple reveal animation for sections */
 [data-reveal] {
-	opacity: 0;
-	transform: translateY(18px);
-	transition: opacity 600ms cubic-bezier(.2,.8,.2,1), transform 600ms cubic-bezier(.2,.8,.2,1);
+  opacity: 0;
+  transform: translateY(1.5rem);
+  transition: opacity 600ms ease, transform 600ms ease;
 }
 
 [data-reveal].visible {
-	opacity: 1;
-	transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
-/* small utility for header glass effect */
-.glass {
-	background: rgba(255,255,255,0.03);
-}
-
-
-
-/* map the Tailwind-generated utility class names to the variables */
-.text-textColor { color: var(--textColor) !important; }
-.bg-background { background-color: var(--background) !important; }
-.text-accentColor { color: var(--accentColor) !important; }
-.bg-accentColor { background-color: var(--accentColor) !important; }
-.border-accentColor { border-color: var(--accentColor) !important; }
-.bg-shadowColor { background-color: var(--shadowColor) !important; }
-.shadow-shadowColor { box-shadow: 0 10px 15px -3px var(--shadowColor) !important; }
-
-/* form inputs and other places that rely on bg-shadowColor */
-input.bg-shadowColor, textarea.bg-shadowColor { background-color: var(--shadowColor) !important; }
-
-/* helper to clamp long descriptions (requires tailwind/line-clamp plugin if available) */
-.line-clamp-3 {
-	display: -webkit-box;
-	-webkit-line-clamp: 3;
-	line-clamp: 3;
-	-webkit-box-orient: vertical;
-	overflow: hidden;
-}
-
-/* button fallback styles using variables for consistency */
-.btn-primary {
-	background: var(--accentColor);
-	color: var(--background);
-	padding: 0.5rem 1rem;
-	border-radius: 0.5rem;
-	font-weight: 600;
-}
-
-.btn-outline {
-	background: transparent;
-	color: var(--textColor);
-	border: 1px solid var(--shadowColor);
-	padding: 0.45rem 0.9rem;
-	border-radius: 0.5rem;
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }
